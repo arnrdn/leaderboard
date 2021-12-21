@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding: 2% 0 0 2%;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
+.recent-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-content {
+  border: 2px solid black;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
