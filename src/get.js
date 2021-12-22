@@ -8,7 +8,6 @@ export default () => {
   const unLi = document.querySelector('ul');
   getScores().then((json) => {
     const infoArr = json.result;
-    console.log(infoArr);
     for (let i = 0; i < infoArr.length; i += 1) {
       unLi.innerHTML += `<li>${infoArr[i].user}: ${infoArr[i].score}</li>`;
     }
