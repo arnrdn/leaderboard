@@ -1,0 +1,25 @@
+@import './utilities';
+
+h1 {
+  padding: 2% 0 0 2%;
+}
+
+.main-content {
+  @include flexDisplay(row, space-evenly);
+
+  margin-top: 10%;
+}
+
+.recent-title {
+  @include flexDisplay(row, space-between);
+}
+
+.user-content {
+  border: 2px solid black;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+form {
+  @include flexDisplay(column, space-evenly);
+}
