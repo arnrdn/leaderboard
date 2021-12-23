@@ -10,7 +10,7 @@
 ## Built With
 
 - HTML, CSS, JavaScript
-- SASS
+- SCSS
 
 ## Live Demo
 
