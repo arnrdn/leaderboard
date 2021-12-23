@@ -1,0 +1,113 @@
+@import './utilities';
+
+$fontColor : rgb(118, 80, 129);
+$extraColor : rgb(247, 241, 250);
+$titlePadding : 0 0.2rem 1.5rem 0.2rem;
+
+body {
+  color: $fontColor;
+  font-family: Tahoma, sans-serif;
+  overflow: auto;
+}
+
+h1 {
+  padding: 4% 0 2% 8.2%;
+}
+
+.main-content {
+  @include flexDisplay(row, space-evenly);
+
+  margin-top: 1rem;
+}
+
+.add-score {
+  width: 30%;
+  min-width: 300px;
+}
+
+.recent-scores {
+  width: 45%;
+}
+
+.recent-title {
+  @include flexDisplay(row, space-between);
+
+  padding: $titlePadding;
+}
+
+.user-content {
+  border: 2px solid $fontColor;
+  border-radius: 10px;
+  list-style-type: none;
+  height: 50vh;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: $extraColor;
+    border-radius: 30px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: 1px solid $fontColor;
+    background: $extraColor;
+    width: 1px;
+    border-radius: 30px;
+  }
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.7fr;
+  gap: 1.3rem;
+  grid-template-areas:
+    "title title"
+    "name name"
+    "score score"
+    ". button";
+
+  & input {
+    padding: 0.5rem;
+
+    @include border();
+  }
+}
+
+form h2 {
+  grid-area: title;
+}
+
+form input:nth-of-type(1) {
+  grid-area: name;
+}
+
+form input:nth-of-type(2) {
+  grid-area: score;
+}
+
+button {
+  @include border();
+
+  cursor: pointer;
+  padding: 0.5rem;
+  color: $fontColor;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: $extraColor;
+}
+
+form button {
+  grid-area: button;
+}
+
+ul li {
+  padding: 1rem 2rem;
+  font-weight: 600;
+}
+
+ul li:nth-of-type(2n) {
+  background-color: $extraColor;
+}

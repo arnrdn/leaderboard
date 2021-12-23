@@ -1,4 +1,4 @@
-import './style.css';
+import './styles/style.scss';
 import post from './post.js';
 import get from './get.js';
 

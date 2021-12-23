@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #765081;
+  font-family: Tahoma, sans-serif;
+  overflow: auto;
+}
+
+h1 {
+  padding: 4% 0 2% 8.2%;
+}
+
+.main-content {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.add-score {
+  width: 30%;
+  min-width: 300px;
+}
+
+.recent-scores {
+  width: 45%;
+}
+
+.recent-title {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 0 0.2rem 1.5rem 0.2rem;
+}
+
+.user-content {
+  border: 2px solid #765081;
+  border-radius: 10px;
+  list-style-type: none;
+  height: 50vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.user-content::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f7f1fa;
+  border-radius: 30px;
+}
+
+.user-content::-webkit-scrollbar-thumb {
+  border: 1px solid #765081;
+  background: #f7f1fa;
+  width: 1px;
+  border-radius: 30px;
+}
+
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 0.7fr;
+  grid-template-rows: 1fr 1fr 1fr 0.7fr;
+  gap: 1.3rem;
+  grid-template-areas:
+    "title title"
+    "name name"
+    "score score"
+    ". button";
+}
+
+form input {
+  padding: 0.5rem;
+  border: 1px solid #765081;
+  border-radius: 5px;
+}
+
+form h2 {
+  grid-area: title;
+}
+
+form input:nth-of-type(1) {
+  grid-area: name;
+}
+
+form input:nth-of-type(2) {
+  grid-area: score;
+}
+
+button {
+  border: 1px solid #765081;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #765081;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #f7f1fa;
+}
+
+form button {
+  grid-area: button;
+}
+
+ul li {
+  padding: 1rem 2rem;
+  font-weight: 600;
+}
+
+ul li:nth-of-type(2n) {
+  background-color: #f7f1fa;
+}

@@ -2,18 +2,19 @@
 
 # Leaderboard
 
-> This project is a Leaderboard where you can pass you scores. The main goal of this project is to practice using an API.
+> This project is a Leaderboard where you can pass your scores. The main goal of this project is to practice using an API.
 
-
+<img src="./img/app-screenshot.jpg">
 
 
 ## Built With
 
 - HTML, CSS, JavaScript
+- SCSS
 
 ## Live Demo
 
-[Click here to see a live version of this app!]()
+[Click here to see a live version of this app!](https://affectionate-kilby-a992c3.netlify.app/)
 
 ## Getting Started
 
