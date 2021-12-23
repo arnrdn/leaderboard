@@ -4,8 +4,12 @@
   flex-direction: $direction;
 }
 
+@mixin border() {
+  border: 1px solid $fontColor;
+  border-radius: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
-

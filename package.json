@@ -39,6 +39,7 @@
     "webpack-dev-server": "^4.6.0"
   },
   "dependencies": {
+    "eslint-config-pulsovi-node-webkit": "^0.0.2",
     "lodash": "^4.17.21",
     "node-sass": "^7.0.0"
   }
